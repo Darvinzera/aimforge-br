@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora eDPI Valorant</title>
-    <p class="descricao">
-Descubra seu eDPI e compare sua sensibilidade com a faixa usada por jogadores competitivos de Valorant.
-</p>
+    <title>AimForge BR</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
 
         <h1>AimForge BR</h1>
-<h2>Calculadora de eDPI para Valorant</h2>
+        <h2>Calculadora de eDPI para Valorant</h2>
+
+        <p class="descricao">
+            Descubra seu eDPI e compare sua sensibilidade com a faixa usada por jogadores competitivos de Valorant.
+        </p>
 
         <div class="card">
 
@@ -28,24 +30,27 @@ Descubra seu eDPI e compare sua sensibilidade com a faixa usada por jogadores co
             <button onclick="calcular()">Calcular</button>
 
             <div id="resultado"></div>
+
+            <hr>
+
             <h2>Conversor Valorant ↔ CS2</h2>
 
-<label>Jogo de origem</label>
+            <label>Jogo de origem</label>
 
-<select id="origem">
-    <option value="valorant">Valorant</option>
-    <option value="cs2">CS2</option>
-</select>
+            <select id="origem">
+                <option value="valorant">Valorant</option>
+                <option value="cs2">CS2</option>
+            </select>
 
-<label>Sensibilidade</label>
+            <label>Sensibilidade</label>
 
-<input type="number" id="sensConvert" step="0.01">
+            <input type="number" id="sensConvert" step="0.01">
 
-<button onclick="converter()">Converter</button>
+            <button onclick="converter()">Converter</button>
 
-<div id="resultadoConversao"></div>
+            <div id="resultadoConversao"></div>
 
-</div>
+        </div>
 
     </div>
 
