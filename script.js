@@ -38,3 +38,35 @@ function calcular() {
         </div>
     `;
 }
+function converter(){
+
+    const origem =
+        document.getElementById("origem").value;
+
+    const sens =
+        parseFloat(
+            document.getElementById("sensConvert").value
+        );
+
+    if(!sens){
+        alert("Digite uma sensibilidade.");
+        return;
+    }
+
+    let resultado;
+
+    if(origem === "valorant"){
+        resultado = sens * 3.181818;
+        document.getElementById(
+            "resultadoConversao"
+        ).innerHTML =
+        `<h3>CS2: ${resultado.toFixed(2)}</h3>`;
+    }
+    else{
+        resultado = sens / 3.181818;
+        document.getElementById(
+            "resultadoConversao"
+        ).innerHTML =
+        `<h3>Valorant: ${resultado.toFixed(2)}</h3>`;
+    }
+}
