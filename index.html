@@ -50,6 +50,40 @@
 
             <div id="resultadoConversao"></div>
 
+            <hr>
+
+<h2>Recomendador de Sensibilidade</h2>
+
+<label>Tamanho do Mousepad</label>
+
+<select id="mousepad">
+    <option value="pequeno">Pequeno</option>
+    <option value="medio">Médio</option>
+    <option value="grande">Grande</option>
+</select>
+
+<label>Estilo de Mira</label>
+
+<select id="estilo">
+    <option value="wrist">Wrist Aim</option>
+    <option value="arm">Arm Aim</option>
+</select>
+
+<label>Função Principal</label>
+
+<select id="funcao">
+    <option value="duelista">Duelista</option>
+    <option value="iniciador">Iniciador</option>
+    <option value="controlador">Controlador</option>
+    <option value="sentinela">Sentinela</option>
+</select>
+
+<button onclick="recomendar()">
+    Descobrir Sensibilidade
+</button>
+
+<div id="resultadoRecomendacao"></div>
+
         </div>
 
     </div>
