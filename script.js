@@ -12,23 +12,29 @@ function calcular() {
 
     let faixa = "";
     let descricao = "";
+    let cor = "";
 
     if (edpi < 200) {
         faixa = "Baixa";
-        descricao = "Mais precisão para flicks e headshots.";
+        descricao = "Ideal para quem busca máxima precisão.";
+        cor = "#22c55e";
     }
     else if (edpi <= 400) {
         faixa = "Média";
-        descricao = "Equilíbrio entre velocidade e precisão.";
+        descricao = "Faixa usada por muitos jogadores competitivos.";
+        cor = "#eab308";
     }
     else {
         faixa = "Alta";
-        descricao = "Movimentos rápidos, porém menos precisos.";
+        descricao = "Movimentos rápidos, mas menos precisos.";
+        cor = "#ef4444";
     }
 
     document.getElementById("resultado").innerHTML = `
-        <h2>eDPI: ${edpi.toFixed(0)}</h2>
-        <p>Faixa: ${faixa}</p>
-        <p>${descricao}</p>
+        <div style="border-top:2px solid ${cor}; padding-top:15px;">
+            <h2 style="color:${cor};">eDPI: ${edpi.toFixed(0)}</h2>
+            <p><strong>Faixa:</strong> ${faixa}</p>
+            <p>${descricao}</p>
+        </div>
     `;
 }
