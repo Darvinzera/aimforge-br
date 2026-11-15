@@ -68,3 +68,48 @@ function converter(){
             `<h3>Valorant: ${resultado.toFixed(2)}</h3>`;
     }
 }
+function recomendar(){
+
+    const mousepad =
+        document.getElementById("mousepad").value;
+
+    const estilo =
+        document.getElementById("estilo").value;
+
+    const funcao =
+        document.getElementById("funcao").value;
+
+    let recomendacao = "";
+
+    if(estilo === "arm" && mousepad === "grande"){
+
+        recomendacao = `
+            <h3>Faixa Recomendada</h3>
+            <p>DPI: 800</p>
+            <p>Sensibilidade: 0.25 - 0.35</p>
+            <p>eDPI: 200 - 280</p>
+        `;
+    }
+    else if(estilo === "wrist"){
+
+        recomendacao = `
+            <h3>Faixa Recomendada</h3>
+            <p>DPI: 800</p>
+            <p>Sensibilidade: 0.35 - 0.55</p>
+            <p>eDPI: 280 - 440</p>
+        `;
+    }
+    else{
+
+        recomendacao = `
+            <h3>Faixa Recomendada</h3>
+            <p>DPI: 800</p>
+            <p>Sensibilidade: 0.28 - 0.40</p>
+            <p>eDPI: 224 - 320</p>
+        `;
+    }
+
+    document.getElementById(
+        "resultadoRecomendacao"
+    ).innerHTML = recomendacao;
+}
