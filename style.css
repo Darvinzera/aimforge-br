@@ -259,3 +259,12 @@ hr {
 .section-card h2{
     margin-bottom:20px;
 }
+select {
+    color: white;
+    background: #334155;
+}
+
+select option {
+    color: black;
+    background: white;
+}
