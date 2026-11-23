@@ -147,3 +147,25 @@ hr{
         padding:20px;
     }
 }
+.pros-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.pros-table th{
+    background:#ff4655;
+    color:white;
+    padding:12px;
+}
+
+.pros-table td{
+    background:#1e293b;
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #334155;
+}
+
+.pros-table tr:hover td{
+    background:#273549;
+}
