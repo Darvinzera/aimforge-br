@@ -242,3 +242,20 @@ hr {
         padding: 8px;
     }
 }
+.section-card{
+    background: rgba(17,24,39,0.9);
+
+    border-radius:16px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.section-card h2{
+    margin-bottom:20px;
+}
