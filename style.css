@@ -72,3 +72,54 @@ hr{
     margin:30px 0;
     border:1px solid #334155;
 }
+function mostrarPro(){
+
+    const jogador =
+        document.getElementById("proPlayer").value;
+
+    let info = "";
+
+    if(jogador === "aspas"){
+
+        info = `
+            <h3>Aspas</h3>
+            <p>DPI: 800</p>
+            <p>Sensibilidade: 0.33</p>
+            <p>eDPI: 264</p>
+        `;
+    }
+
+    else if(jogador === "tenz"){
+
+        info = `
+            <h3>TenZ</h3>
+            <p>DPI: 800</p>
+            <p>Sensibilidade: 0.35</p>
+            <p>eDPI: 280</p>
+        `;
+    }
+
+    else if(jogador === "less"){
+
+        info = `
+            <h3>Less</h3>
+            <p>DPI: 800</p>
+            <p>Sensibilidade: 0.315</p>
+            <p>eDPI: 252</p>
+        `;
+    }
+
+    else{
+
+        info = `
+            <h3>Zekken</h3>
+            <p>DPI: 1600</p>
+            <p>Sensibilidade: 0.175</p>
+            <p>eDPI: 280</p>
+        `;
+    }
+
+    document.getElementById(
+        "resultadoPro"
+    ).innerHTML = info;
+}
