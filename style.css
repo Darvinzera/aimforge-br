@@ -1,74 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    background:#0f172a;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+
     color:white;
-    font-family:Arial,sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    min-height:100vh;
+    padding:40px 20px;
 }
 
 .container{
-    width:400px;
-}
-
-.card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:12px;
+    max-width:900px;
+    margin:auto;
 }
 
 h1{
     text-align:center;
+    font-size:48px;
+    color:#ff4655;
+    margin-bottom:10px;
 }
 
-input{
-    width:100%;
-    padding:10px;
-    margin-top:5px;
+h2{
+    text-align:center;
     margin-bottom:15px;
+}
+
+.descricao{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.card{
+    background:rgba(30,41,59,0.8);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:
+        0 0 25px rgba(255,70,85,0.2);
+
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:8px;
+    color:#e2e8f0;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+
     border:none;
-    border-radius:8px;
+    border-radius:10px;
+
+    background:#334155;
+    color:white;
+
+    margin-bottom:15px;
 }
 
 button{
     width:100%;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    background:#22c55e;
+
+    background:#ff4655;
+
     color:white;
-    font-size:16px;
+
+    font-weight:bold;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
 }
 
-#resultado{
+button:hover{
+    background:#ff5f6d;
+    transform:translateY(-2px);
+}
+
+#resultado,
+#resultadoConversao,
+#resultadoRecomendacao,
+#resultadoPro{
+
     margin-top:20px;
-    text-align:center;
-    font-size:18px;
+
+    background:#0f172a;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    border-left:4px solid #ff4655;
 }
-.descricao{
-    text-align:center;
-    color:#cbd5e1;
-    margin-bottom:20px;
-}
-h2{
-    text-align:center;
-    font-size:16px;
-    color:#94a3b8;
-    font-weight:normal;
-    margin-top:-10px;
-    margin-bottom:20px;
-}
-select{
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:8px;
-}
+
 hr{
-    margin:30px 0;
-    border:1px solid #334155;
+    border:none;
+    height:1px;
+    background:#334155;
+    margin:35px 0;
+}
+
+.footer{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+}
+
+@media(max-width:700px){
+
+    h1{
+        font-size:32px;
+    }
+
+    .card{
+        padding:20px;
+    }
 }
