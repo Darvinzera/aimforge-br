@@ -1,4 +1,4 @@
-function mostrarPro(){
+function mostrarPro() {
 
     const jogador =
         document.getElementById("proPlayer").value;
