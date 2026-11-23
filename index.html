@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <div class="container">
 
         <h1>🎯 AimForge BR</h1>
+
         <h2>Calculadora de eDPI para Valorant</h2>
 
         <p class="descricao">
@@ -46,117 +48,104 @@
 
             <input type="number" id="sensConvert" step="0.01">
 
-            <button onclick="converter()">Converter</button>
+            <button onclick="converter()">
+                Converter
+            </button>
 
             <div id="resultadoConversao"></div>
 
             <hr>
 
-<h2>Recomendador de Sensibilidade</h2>
+            <h2>Recomendador de Sensibilidade</h2>
 
-<label>Tamanho do Mousepad</label>
+            <label>Tamanho do Mousepad</label>
 
-<select id="mousepad">
-    <option value="pequeno">Pequeno</option>
-    <option value="medio">Médio</option>
-    <option value="grande">Grande</option>
-</select>
+            <select id="mousepad">
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+            </select>
 
-<label>Estilo de Mira</label>
+            <label>Estilo de Mira</label>
 
-<select id="estilo">
-    <option value="wrist">Wrist Aim</option>
-    <option value="arm">Arm Aim</option>
-</select>
+            <select id="estilo">
+                <option value="wrist">Wrist Aim</option>
+                <option value="arm">Arm Aim</option>
+            </select>
 
-<label>Função Principal</label>
+            <label>Função Principal</label>
 
-<select id="funcao">
-    <option value="duelista">Duelista</option>
-    <option value="iniciador">Iniciador</option>
-    <option value="controlador">Controlador</option>
-    <option value="sentinela">Sentinela</option>
-</select>
+            <select id="funcao">
+                <option value="duelista">Duelista</option>
+                <option value="iniciador">Iniciador</option>
+                <option value="controlador">Controlador</option>
+                <option value="sentinela">Sentinela</option>
+            </select>
 
-<button onclick="recomendar()">
-    Descobrir Sensibilidade
-</button>
+            <button onclick="recomendar()">
+                Descobrir Sensibilidade
+            </button>
 
-<div id="resultadoRecomendacao"></div>
+            <div id="resultadoRecomendacao"></div>
+
             <hr>
 
-<h2>Configurações de Profissionais</h2>
-<hr>
+            <div class="tool-card">
 
-<h2>Top Sensibilidades dos Profissionais</h2>
+                <h2>🏆 Top Sensibilidades dos Profissionais</h2>
 
-<table class="pros-table">
-    <thead>
-        <tr>
-            <th>Jogador</th>
-            <th>DPI</th>
-            <th>Sensi</th>
-            <th>eDPI</th>
-        </tr>
-    </thead>
+                <table class="pros-table">
 
-    <tbody>
-        <tr>
-            <td>Aspas</td>
-            <td>800</td>
-            <td>0.33</td>
-            <td>264</td>
-        </tr>
+                    <thead>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>DPI</th>
+                            <th>Sensi</th>
+                            <th>eDPI</th>
+                        </tr>
+                    </thead>
 
-        <tr>
-            <td>TenZ</td>
-            <td>800</td>
-            <td>0.35</td>
-            <td>280</td>
-        </tr>
+                    <tbody>
+                        <tr>
+                            <td>Aspas</td>
+                            <td>800</td>
+                            <td>0.33</td>
+                            <td>264</td>
+                        </tr>
 
-        <tr>
-            <td>Less</td>
-            <td>800</td>
-            <td>0.315</td>
-            <td>252</td>
-        </tr>
+                        <tr>
+                            <td>TenZ</td>
+                            <td>800</td>
+                            <td>0.35</td>
+                            <td>280</td>
+                        </tr>
 
-        <tr>
-            <td>Zekken</td>
-            <td>1600</td>
-            <td>0.175</td>
-            <td>280</td>
-        </tr>
-    </tbody>
-</table>
+                        <tr>
+                            <td>Less</td>
+                            <td>800</td>
+                            <td>0.315</td>
+                            <td>252</td>
+                        </tr>
 
+                        <tr>
+                            <td>Zekken</td>
+                            <td>1600</td>
+                            <td>0.175</td>
+                            <td>280</td>
+                        </tr>
+                    </tbody>
 
-<label>Escolha um jogador</label>
+                </table>
 
-<select id="proPlayer">
-    <option value="aspas">Aspas</option>
-    <option value="tenz">TenZ</option>
-    <option value="less">Less</option>
-    <option value="zekken">Zekken</option>
-</select>
+            </div>
 
-<button onclick="mostrarPro()">
-    Mostrar Configuração
-</button>
+            <hr>
 
-<div id="resultadoPro"></div>
+            <div class="tool-card">
 
-        </div>
+                <h2>🎮 Configurações de Profissionais</h2>
 
-    </div>
+                <label>Escolha um jogador</label>
 
-    <script src="script.js"></script>
-
-<div class="footer">
-    AimForge BR © 2026
-    <br>
-    Ferramentas gratuitas para jogadores competitivos.
-</div>
-</body>
-</html>
+                <select id="proPlayer">
+                    <option value="aspas">
