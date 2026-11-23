@@ -1,7 +1,6 @@
 function mostrarPro() {
 
-    const jogador =
-        document.getElementById("proPlayer").value;
+    const jogador = document.getElementById("proPlayer").value;
 
     const pros = {
         aspas: {
