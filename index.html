@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +9,39 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <h1>🎯 AimForge BR</h1>
+<nav class="navbar">
 
-        <h2>Calculadora de eDPI para Valorant</h2>
+    <div class="logo">
+        🎯 AimForge BR
+    </div>
 
-        <p class="descricao">
-            Descubra seu eDPI e compare sua sensibilidade com a faixa usada por jogadores competitivos de Valorant.
-        </p>
+    <div class="menu">
+        <a href="#edpi">eDPI</a>
+        <a href="#conversor">Conversor</a>
+        <a href="#recomendador">Recomendador</a>
+        <a href="#pros">Pros</a>
+    </div>
 
-        <div class="card">
+</nav>
 
-            <div class="section-card">
+<div class="container">
 
-<h2>🎯 Calculadora eDPI</h2>
+    <h1>🎯 AimForge BR</h1>
 
-<label>DPI</label>
+    <p class="descricao">
+        Descubra seu eDPI, converta sensibilidades, compare configurações profissionais e encontre sua sensibilidade ideal no Valorant.
+    </p>
+
+    <div class="card">
+
+        <!-- eDPI -->
+
+        <div class="section-card" id="edpi">
+
+            <h2>🎯 Calculadora eDPI</h2>
+
+            <label>DPI</label>
             <input type="number" id="dpi" placeholder="Ex: 800">
 
             <label>Sensibilidade</label>
@@ -35,13 +50,14 @@
             <button onclick="calcular()">Calcular</button>
 
             <div id="resultado"></div>
-                </div>
 
-            <hr>
+        </div>
 
-            <div class="section-card" id="edpi">
+        <!-- Conversor -->
 
-<h2>🔄 Conversor Valorant ↔ CS2</h2>
+        <div class="section-card" id="conversor">
+
+            <h2>🔄 Conversor Valorant ↔ CS2</h2>
 
             <label>Jogo de origem</label>
 
@@ -54,18 +70,17 @@
 
             <input type="number" id="sensConvert" step="0.01">
 
-            <button onclick="converter()">
-                Converter
-            </button>
+            <button onclick="converter()">Converter</button>
 
             <div id="resultadoConversao"></div>
-                </div>
 
-            <hr>
+        </div>
 
-           <div class="section-card" id="conversor">
+        <!-- Recomendador -->
 
-<h2>🎯 Recomendador de Sensibilidade</h2>
+        <div class="section-card" id="recomendador">
+
+            <h2>🎯 Recomendador de Sensibilidade</h2>
 
             <label>Tamanho do Mousepad</label>
 
@@ -96,82 +111,89 @@
             </button>
 
             <div id="resultadoRecomendacao"></div>
-            </div>
 
-            <hr>
+        </div>
 
-            <div class="section-card" id="recomendador">
+        <!-- Tabela dos Pros -->
 
+        <div class="tool-card">
 
-                <h2>🏆 Top Sensibilidades dos Profissionais</h2>
+            <h2>🏆 Top Sensibilidades dos Profissionais</h2>
 
-                <table class="pros-table">
+            <table class="pros-table">
 
-                    <thead>
-                        <tr>
-                            <th>Jogador</th>
-                            <th>DPI</th>
-                            <th>Sensi</th>
-                            <th>eDPI</th>
-                        </tr>
-                    </thead>
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>DPI</th>
+                        <th>Sensi</th>
+                        <th>eDPI</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Aspas</td>
-                            <td>800</td>
-                            <td>0.33</td>
-                            <td>264</td>
-                        </tr>
+                <tbody>
 
-                        <tr>
-                            <td>TenZ</td>
-                            <td>800</td>
-                            <td>0.35</td>
-                            <td>280</td>
-                        </tr>
+                    <tr>
+                        <td>Aspas</td>
+                        <td>800</td>
+                        <td>0.33</td>
+                        <td>264</td>
+                    </tr>
 
-                        <tr>
-                            <td>Less</td>
-                            <td>800</td>
-                            <td>0.315</td>
-                            <td>252</td>
-                        </tr>
+                    <tr>
+                        <td>TenZ</td>
+                        <td>800</td>
+                        <td>0.35</td>
+                        <td>280</td>
+                    </tr>
 
-                        <tr>
-                            <td>Zekken</td>
-                            <td>1600</td>
-                            <td>0.175</td>
-                            <td>280</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <td>Less</td>
+                        <td>800</td>
+                        <td>0.315</td>
+                        <td>252</td>
+                    </tr>
 
-                </table>
+                    <tr>
+                        <td>Zekken</td>
+                        <td>1600</td>
+                        <td>0.175</td>
+                        <td>280</td>
+                    </tr>
 
-            </div>
+                </tbody>
 
-            <hr>
+            </table>
 
-            <div class="tool-card">
+        </div>
 
-    <h2>🎮 Configurações de Profissionais</h2>
+        <!-- Configurações dos Pros -->
 
-    <label>Escolha um jogador</label>
+        <div class="tool-card" id="pros">
 
-    <select id="proPlayer">
-        <option value="aspas">Aspas</option>
-        <option value="tenz">TenZ</option>
-        <option value="less">Less</option>
-        <option value="zekken">Zekken</option>
-    </select>
+            <h2>🎮 Configurações de Profissionais</h2>
 
-    <button onclick="mostrarPro()">
-        Mostrar Configuração
-    </button>
+            <label>Escolha um jogador</label>
 
-    <div class="tool-card" id="profissionais">
+            <select id="proPlayer">
+                <option value="aspas">Aspas</option>
+                <option value="tenz">TenZ</option>
+                <option value="less">Less</option>
+                <option value="zekken">Zekken</option>
+            </select>
+
+            <button type="button" onclick="mostrarPro()">
+                Mostrar Configuração
+            </button>
+
+            <div id="resultadoPro"></div>
+
+        </div>
+
+    </div>
 
 </div>
+
 <footer class="footer">
     <p>AimForge BR © 2026</p>
     <p>Ferramentas gratuitas para jogadores competitivos.</p>
