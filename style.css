@@ -268,3 +268,51 @@ select option {
     color: black;
     background: white;
 }
+html{
+    scroll-behavior:smooth;
+}
+
+.navbar{
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 25px;
+    margin-bottom:25px;
+
+    background:rgba(15,23,42,0.95);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+    color:#ff4655;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.menu{
+    display:flex;
+    gap:10px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:10px;
+}
+
+.menu a:hover{
+    background:#ff4655;
+}
